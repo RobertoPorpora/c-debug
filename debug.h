@@ -20,10 +20,13 @@ FILE *debug_file = NULL;
 
 static char *get_file_name(char *path)
 {
-    char *last = path;
+    char *last = NULL;
     while (path != NULL)
     {
-        path++;
+        if (path[0] == DEBUG_FOLDER_SEPARATOR)
+        {
+            path = &path[1];
+        }
         last = path;
         path = strchr(path, DEBUG_FOLDER_SEPARATOR);
     }
