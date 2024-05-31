@@ -1,4 +1,13 @@
 #pragma once
 
-void debug_enable(char *path);
-void debug_log(const char *description, const char *format, ...);
+typedef struct
+{
+    unsigned int terminal_output_enable : 1;
+    unsigned int terminal_timestamp_enable : 1;
+    unsigned int file_output_enable : 1;
+    unsigned int file_timestamp_enable : 1;
+    unsigned int file_history_enable : 1;
+} debug_flags_t;
+
+void debug_enable(const char *path, debug_flags_t flags);
+void debug_log(const char *format, ...);
