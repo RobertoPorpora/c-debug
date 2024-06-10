@@ -118,6 +118,7 @@ root
 - [Debug logger for Python.](https://github.com/RobertoPorpora/python-debug)
 - [Debug logger for C/C++.](https://github.com/RobertoPorpora/c-debug)
 - [Debug logger for Node.js.](https://github.com/RobertoPorpora/node-debug)
+- [Debug logger for Rust.](https://github.com/RobertoPorpora/rust-debug)
 
 
 <div style="text-align: right;">
